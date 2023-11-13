@@ -24,6 +24,7 @@ macro_rules! define_api {
         $(
             $(#[$attr])*
             $vis fn $name( $($arg : $type),* ) $( -> $ret )? {
+                #[allow(unreachable_code)]
                 $crate::imp::$name( $($arg),* ).into()
             }
         )+
