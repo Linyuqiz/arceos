@@ -47,6 +47,11 @@ pub mod time {
         /// Returns the current clock time.
         pub fn ax_current_time() -> AxTimeValue;
     }
+
+    define_api! {
+        /// Returns the current clock time.
+        pub fn ax_current_ticks() -> u128;
+    }
 }
 
 /// Memory management.

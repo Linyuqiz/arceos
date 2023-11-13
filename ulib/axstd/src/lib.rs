@@ -50,6 +50,9 @@
 #![feature(doc_cfg)]
 #![feature(doc_auto_cfg)]
 #![feature(ip_in_core)]
+#![feature(const_hash)]
+#![feature(hashmap_internals)]
+#![feature(hasher_prefixfree_extras)]
 
 #[cfg(feature = "alloc")]
 extern crate alloc;

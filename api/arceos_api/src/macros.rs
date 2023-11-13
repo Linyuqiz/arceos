@@ -24,7 +24,7 @@ macro_rules! define_api {
         $(
             $(#[$attr])*
             $vis fn $name( $($arg : $type),* ) $( -> $ret )? {
-                $crate::imp::$name( $($arg),* )
+                $crate::imp::$name( $($arg),* ).into()
             }
         )+
     };
